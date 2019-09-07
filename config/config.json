@@ -19,7 +19,7 @@
     "username": "pqpgsymbtcfatd",
     "password": "e8e3c97ef5111ff2961bf3b3edc086f0b21cf1ae447170592db1ac1294012ffa",
     "database": "dcdv85fkj6352h",
-    "host": "    ec2-54-83-201-84.compute-1.amazonaws.com",
+    "host": "ec2-54-83-201-84.compute-1.amazonaws.com",
     "dialect": "postgres"
   }
 }
