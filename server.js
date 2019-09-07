@@ -4,8 +4,6 @@ const bodyParser = require('body-parser');
 require('express-group-routes')
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-
 
 
 const categoryController = require('./controllers/categoryController')
@@ -38,7 +36,8 @@ app.group("/api/v1", (router) => {
     router.patch('/order/:id', orderControllers.update)    
     router.delete('/order/:id', orderControllers.delete) 
 })
-app.listen(PORT, (err) => {
-    if (err) throw err;
-    console.log(`App running on port ${PORT}`);
-});
+
+var server = app.listen(process.env.PORT || 5000, function () {
+    var port = server.address().port;
+    console.log("Express is working on port " + port);
+  });
